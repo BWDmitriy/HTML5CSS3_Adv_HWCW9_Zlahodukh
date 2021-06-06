@@ -1,0 +1,83 @@
+.servicesSec {
+    padding: 7em 0;
+    background: url(../img/food.png) repeat;
+    color: #5c3d03;
+
+    .servicesHeader {
+        align-self: center;
+        justify-self: center;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #000;
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+    }
+
+    .servicesArticles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding: 7rem;
+
+        div.serArtImg {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            z-index: 0;
+            border: 1px black solid;
+
+
+            img {
+                width: 100px;
+                height: 100px;
+                padding: 0.5rem;
+            }
+        }
+
+        .servicesArticle {
+            text-align: center;
+            display: block;
+            margin-bottom: 40px;
+
+            .serArtTxt {
+                display: block;
+                text-align: center;
+                margin-bottom: 40px;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    color: #000;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: #5c3d03;
+                }
+            }
+        }
+
+    }
+}

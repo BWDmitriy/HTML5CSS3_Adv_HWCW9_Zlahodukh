@@ -1,0 +1,222 @@
+.menuHeaderDiv {
+    text-align: center;
+    justify-items: center;
+    padding: 7rem;
+
+    div {
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+
+
+}
+p.flip {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+p.flip:before {
+    position: absolute;
+    bottom: 4px;
+    left: 100px;
+    right: 0;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+p.flip span.deg1 {
+    position: absolute;
+    bottom: 2px;
+    left: -30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+p.flip span.deg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+p.flip span.deg3 {
+    position: absolute;
+    bottom: 2px;
+    left: 30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+p.flip:after {
+    position: absolute;
+    bottom: 4px;
+    left: -100px;
+    right: 0;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+.menu1Table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    @media (min-width: 1281px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 1280px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
+    
+    div {
+        display: flex;
+
+        img {
+            display: block;
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        article {
+            padding: 1.5rem;
+            width: 50%;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                a {
+                    border-color: rgba(255, 255, 255, 0.8);
+                    background: none;
+                    border-width: 1px;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    font-size: 13px;
+                    padding: 0.5rem 1rem;
+                    margin-left: .5rem;
+                }
+
+                a:hover {
+                    color: black;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    background: #fac564;
+                    border: 1px solid transparent;
+                }
+
+            }
+        }
+    }
+}
+
+.entryImg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.menu2Sec {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+
+.menu2Table {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 1%;
+}
+
+.menu2TableEntry {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    display: flex;
+
+    .entryDesc {
+        width: calc(100% - 60px);
+        padding-left: 1rem;
+
+        .entryText {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            z-index: 0;
+
+            h3 {
+                width: calc(75% - 80px);
+                font-size: 18px;
+                display: block;
+
+                span {
+                    color: #bfbfbf;
+                }
+
+            }
+
+            .entryLine {
+                width: 85%;
+                bottom: 35%;
+                align-self: center;
+                left: 0;
+                right: 0;
+                content: '';
+                height: 1px;
+                border-bottom: 1px dotted #bf7e06;
+                z-index: -1;
+            }
+        }
+
+
+    }
+
+}

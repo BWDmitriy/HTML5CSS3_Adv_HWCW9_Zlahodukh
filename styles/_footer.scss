@@ -1,0 +1,184 @@
+footer {
+    font-size: 16px;
+    padding: 7em;
+    background: #101315;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-weight: normal;
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footerContent {
+        display: grid;
+        /* grid-template-rows: 1fr 1fr; */
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        margin-right: -15px;
+        margin-left: -15px;
+        width: 100%;
+        @media (min-width: 1025px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .footerAU {
+            text-align: start;
+
+            ul {
+                margin-top: 0;
+                padding-left: 0;
+                margin-bottom: 1rem;
+                list-style: none;
+                margin-top: 3rem;
+                float: left;
+
+                li {
+                    list-style: none;
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        display: block;
+                        float: left;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 50%;
+                        position: relative;
+                        color: rgba(255, 255, 255, 0.7);
+                        align-items: center;
+
+                        span {
+                            position: absolute;
+                            top: 55%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .footerRB {
+            list-style: none;
+
+            img {
+                display: block;
+                height: 80px;
+                width: 80px;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .footerRBDiv {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+
+            }
+
+            .footerRBDiv>div {
+                display: block;
+                font-size: 12px;
+                width: calc(100% - 100px);
+
+                span {
+                    img {
+                        display: inline-block;
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+
+                div {
+                    display: inline-block;
+
+                    a {
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .footerServ {
+            text-align: center;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            ul {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                padding-left: 0;
+                list-style: none;
+
+                li {
+                    a {
+                        display: block;
+                        color: rgba(255, 255, 255, 0.7);
+                        padding-bottom: 0.5rem;
+                        padding-top: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .footerQuestions {
+            img {
+                width: 16px;
+                height: 16px;
+                margin-right: 0.5rem;
+            }
+
+            ul {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                padding: 0;
+
+                li {
+                    a {
+                        display: table;
+                        line-height: 1.5;
+                        margin-bottom: 15px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

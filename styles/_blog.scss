@@ -1,0 +1,109 @@
+.blogSec {
+    padding: 7em 0;
+    display: block;
+
+    .blogHeader {
+        align-self: center;
+        justify-self: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+    }
+
+    .blogArticles {
+        display: flex;
+        @media (min-width: 700px) {
+            flex-wrap: nowrap;
+        }
+        @media (max-width: 700px) {
+            flex-wrap: wrap;
+        }
+        article {
+            margin-left:10%;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            flex-direction: column;
+            display: flex;
+            margin-bottom: 1.5rem;
+            justify-content: space-evenly;
+
+            div {
+                img {
+                    width: 75%;
+                }
+            }
+
+            a.blogArIcon {
+                overflow: hidden;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: block;
+                width: 100%;
+                height: 270px;
+            }
+
+            div.blogArTxt {
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                    font-weight: 400;
+                    color: white;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                div {
+                    display: block;
+                    font-size: 12px;
+                    margin-bottom: 0.5rem;
+
+                    span {
+                        img {
+                            display: inline-block;
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+
+                    div {
+                        display: inline-block;
+
+                    }
+
+                    a {
+                        color: gray;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+}
